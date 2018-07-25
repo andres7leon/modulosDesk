@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Module desk copy</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style type="text/css">
+		html,body {
+			margin: 0;
+			padding: 0;
+			font-family: Montserrat;
+			width: 100%;
+			height: 100%;
+		}
+
+		nav	{
+			background: #f2f2f2;
+			height: 70px;
+			overflow: hidden;
+			padding-left: 1%;
+			padding-top: 30px;
+		}
+
+		nav	div {
+			height: 100%;
+			width: 33%;
+			float: left;
+		}
+
+		a{
+			color: #484343;
+    		text-decoration: none;
+    		transition: all 0.5s ease;
+		} 
+
+		a:hover{
+    		color: #28A5BE;
+		}
+
+		button {
+			font-family: Montserrat;
+		} 
+
+
+
+		.menu-one a {
+			margin-left: 8px;
+			margin-right: 8px;
+
+		}
+
+		.menu-two img {
+			margin-left: 90px;
+			transition: all 0.5s;
+		}
+
+		.menu-two img:hover {
+			margin-top:-10px;
+		}
+
+
+		.menu-three {
+			text-align: right;
+		}
+
+		.menu-three a{
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+
+		.menu-three i {
+			vertical-align: middle;
+			color: #929292;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+
+		.content {
+			background: #e2e2e2;
+			width: 100%;
+			height: 70%;
+			overflow: hidden;
+			position: relative;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.content div {
+			position: absolute;
+			height: 100%;
+		}
+
+		.content-one {
+			left:0px;
+			width: 30%;
+			padding-top: 140px;
+		}
+
+		.content-one h1{
+			padding: 30px;
+		}
+
+		.content-one p{
+			padding: 30px;
+		}
+
+
+		.content-one p {
+			text-align: justify;
+		}
+
+		.content-two {
+			width: 70%;
+			right: 0px;
+		}
+
+		.cont-bnts {
+			width: 100%;
+			text-align: center;
+		}
+
+		.cont-btns-one {
+			background: #28A5BE;
+			border: none;
+			width: 200px;
+			height: 50px;
+			font-weight: 600;
+			color: #fff;
+		}
+
+		.cont-btns-two {
+			background: #000;
+			border: none;
+			width: 120px;
+			height: 35px;
+			font-weight: 600;
+			color: #fff;
+		}
+
+		.content2 {
+			height: 50%
+		}
+
+		.content2 .content-one{
+			width: 40%;
+			padding-top: 0;
+		}
+		
+		.content2 .content-two{
+			width: 60%;
+			font-size: Montserat;
+		}
+
+		.content2 .content-two h1 {
+			font-weight: 500;
+    		color: #5a5a5a;
+		}
+
+		.content2 .content-two h1, .content2 .content-two p{
+			padding: 50px 50px 0px 50px;
+		}
+
+		.content2 .content-two .cont-bnts{
+			text-align: left;
+			padding-left: 50px;
+			padding-top: 20px; 
+		}
+
+		.content2 .content-two .cont-bnts button{
+			width: auto;
+			padding: 10px;
+		}
+
+		.content3 {
+			width: 100%;
+			height: 60%;
+			text-align: center;
+			margin-top: -21px;
+			overflow: hidden;
+			background: #e2e2e2;
+			border-top: 10px solid #000;
+		}
+
+		.content3 h2 {
+			padding-top: 50px;
+		    font-weight: 600;
+		    color: #525252;
+		}
+
+		.content3 p, .content4-section p, .content5 .content5-cont p, .content8 p, .content7 p{
+		    font-size: 14px;
+    		color: #404040;
+		}
+
+		.content3 h4, .content4-section h2, .content5 .content5-cont h2, .content8 h2, .content7 h2{
+    		color: #525252;
+    		font-weight: 600;
+		}
+
+		.content3 .content3-description{
+			padding: 10px 150px 10px 150px;
+		}
+
+		.content3-divs div{
+			display: inline-block;
+			width: 30%;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+
+		
+		.content4 {
+			width: 100%;
+			height: auto;
+			position: relative;
+		}
+
+
+		.content4-img-p {
+			height: 650px;
+			width: 100%;
+			overflow: hidden;
+			z-index: 2;
+		}
+
+		.content4 .content4-img-p button {
+			position: absolute;
+			top: 0;
+			width: 60px;
+			height: 60px;
+			border: 0;
+			background: #f2f2f2;
+			font-size: 40px;
+			border-radius: 50px;
+			-webkit-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.75);
+			background: #e8e8e8;
+    		color: #565656;
+    		outline: none;
+    		cursor: pointer;
+    		transition: all 0.5s ease;
+		}
+
+		.content4 .content4-img-p button:hover {
+			transform: rotate(45deg);
+		}
+
+		.btn-more-1{
+		    top: 500px !important;
+		    left: 56px;
+		}
+
+		.btn-more-2{
+			top: 350px !important;
+    		left: 260px;
+		}
+
+		.btn-more-3{
+			top: 350px !important;
+		    right: 260px;
+		}
+
+		.btn-more-4{
+			top: 500px !important;
+		    right: 56px;
+		}
+
+		.content4-section {
+			width: 80%;
+			background: #fff;
+			margin: 0 auto;
+			margin-top: -60px;
+			z-index: 3;
+			position: relative;
+			padding: 50px;
+			text-align: center;
+			overflow: hidden;
+		}
+
+		.content4-section img {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.cont-porcent {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		.cont-porcent div {
+			display: inline-block;
+			width: 20%;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+		.cont-porcent div button {
+			border: 3px solid #43525A;
+			color:#43525A;
+			font-size: 15px;
+			border-radius: 30px;
+			padding: 10px;
+			background: transparent;
+			font-weight: 600;
+			outline: none;
+			transition: all 0.5s;
+			cursor: pointer;
+
+		}
+
+		.active-btn-porcent , .cont-porcent div button:hover{
+			border: 3px solid #28a5be !important;
+			color:#28a5be !important;
+		}
+
+		.content5 {
+			width: 100%;
+			text-align: center;
+		}
+
+		.content5 div {
+			display: inline-block;
+			width: 15%;
+			overflow: hidden;
+		}
+
+		.content5 .content5-cont {
+			width: 60%;
+			margin-bottom: 120px;
+		}
+
+		.content5 .content5-cont button {
+			border: 2px solid #28A5BE;
+			color: #28A5BE;
+			height: 50px;
+			padding: 10px;
+			background: #fff;
+			transition: all 0.5s;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		.content5 .content5-cont button:hover {
+			background: #28A5BE;
+			color:#fff;
+		}
+
+		.content5 .img-one{
+		    margin-left: -225px;
+		}
+
+		.content6 {
+			background-image: linear-gradient(-90deg, #1BA5C0 0%, #0C6B8C 100%);
+			color: #fff;
+			height: 60%;
+		}
+
+		.content6 div {
+			width: 45%;
+			padding: 50px;
+			position: absolute;
+		}
+
+		.content6 .content6-one {
+			left: 0;
+		}
+
+		.content6 .content6-two {
+			right: 0;
+
+		}
+
+		.content6 img {
+			position: absolute;
+			top: 0;
+		}
+
+		.content6-one h2 {
+			font-weight: 600;
+		}
+
+		.content6-one p {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 30px;
+		}
+
+		.content6-one button{
+			padding: 13px;
+			color: #fff;
+			background: #272727;
+			border: 0;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+
+
+		.content7 {
+			height: 30%;
+			width: 60%;
+			padding: 50px;
+		}
+
+		.blue {
+			color: #28A5BE !important;
+		}
+
+		.content7-email {
+			height: 30px;
+		}
+
+		.content7-email input {
+			height: 30px;
+			width: 180px;
+			padding-left:10px; 
+		}
+
+		.content7-email button {
+			height: 36px;
+			margin-top: 1px;
+			margin-left: -4px;
+			border: 0;
+			background: #28A5BE;
+			color: #fff;
+		}
+
+		.content8 {
+			padding: 50px;
+			background: #BEEADF;
+			text-align: center;
+		}
+
+		footer {
+			width: 100%;
+			height: 30%;
+			overflow: hidden;
+			padding-top: 60px;
+			position: relative;
+		}
+
+		footer .f-img {
+			position: absolute;
+			left: 0;
+			width: 20%;
+			overflow: hidden;
+			text-align: right;
+			border-right: 1px solid #ccc;
+		}
+
+		footer .f-img img{
+			width: 100px;
+			height: 90px;
+			margin-right: 10px;
+		}
+
+
+		.f-cont {
+			position: absolute;
+			width: 80%;
+			right: 0;
+			margin-left: 10px;
+		}
+
+		.f-cont ol{
+			width: 18%;
+		    overflow: hidden;
+		    display: inline-block;
+		    font-size: 12px;
+		    list-style: none;
+		    padding: 0;
+		    margin-left: 15px;
+		    line-height: 25px;
+		    cursor: pointer;
+
+		}
+
+		.end-t {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 11px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="menu-one"><a href="#">Modules</a><a href="#">Legs</a><a href="#">Add-ons</a><span> | </span><span> ••• </span></div>
+		<div class="menu-two"> <img src="./img/logo.jpg"></div>
+		<div class="menu-three"><a href="#">For Business</a><a href="#">shipping</a><span> | </span> <a href="#">Configure yours</a> <span>|</span> <i class="material-icons">shopping_cart</i></div>
+	</nav>
+
+	<div class="content">
+		<div class="content-one">
+			<h1>
+				The first truly modular desk system
+			</h1>
+			<p>
+				We combine utility, craftsmanship and perfectionism to create the only desk that gives you absolute freedom in organizing, upgrading and changing your workspace.
+			</p>
+			<div class="cont-bnts">
+				<button class="cont-btns-one">Configure yours¡</button><button class="cont-btns-two">Learn more</button>
+			</div>
+		</div>
+		<div class="content-two">
+			<img src="https://www.modulosdesk.com/static/media/hero-new-desk--cut.cb44eae5.png" width="100%">
+		</div>
+	</div>
+
+	<div class="content content2">
+		<div class="content-one">
+			<img src="https://www.modulosdesk.com/static/media/fotka-surface-modules-02.ce649369.jpg" width="100%">
+		</div>
+		<div class="content-two">
+			<h1>
+				A surface made of modules
+			</h1>
+			<p>
+				Modulos surface is comprised of Modules - surface tiles each capable of being connected to another one in any direction providing you with infinite possibilities. Since there are various models of modules with different functionalities available, you can create a surface that works the best for you, with functionalities spread out exactly how you like them.
+
+				And if you need to change your desk, you can simply rearrange or add new modules. No need to throw your old desk just because your needs have changed - with Modulos, your desk follows the change of your needs!
+			</p>
+			<div class="cont-bnts">
+				<button class="cont-btns-two">Shop available modules</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="content3">
+		<h2>Super practical</h2>
+		<p class="content3-description">Getting your new Modulos desk is a breeze! Simply configure your desk, order it and easily assemble it once it arrives! And the beautiful thing is that you can reconfigure your desk later or upgrade it by ordering new modules or legs. Never again experience issues when moving into a new space or redecorating your existing one.</p>
+		<div class="content3-divs">
+			<div>
+				<img src="https://www.modulosdesk.com/static/media/super-practical-01.428939ee.png">
+				<h4>Create your configuration</h4>
+				<p>Use our simple and powerful configurator to create your own desk configuration or, alternatively, add element by element to cart.</p>
+			</div>
+			<div>
+				<img src="https://www.modulosdesk.com/static/media/super-practical-02.e1689585.png">
+				<h4>Assemble it and enjoy</h4>
+				<p>Easily assemble your desk once it arrives - we supply you with all the tools needed for assembly. tools needed for assembly.</p>
+			</div>
+			<div>
+				<img src="https://www.modulosdesk.com/static/media/super-practical-03.d958c4d2.png">
+				<h4>Reconfigure / upgrade</h4>
+				<p>Damaged a part of surface? Decided to move or redecorate? Just reconfigure your desk and/or order additional elements from us!</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="content4">
+		<div class="content4-img-p">
+			<img src="https://www.modulosdesk.com/static/media/modulos-4x2conf.cbb371ed.jpg">
+			<button class="btn-more-1">+</button>
+			<button class="btn-more-2">+</button>
+			<button class="btn-more-3">+</button>
+			<button class="btn-more-4">+</button>
+		</div>
+
+		<div class="content4-section">
+			<h2>Get a discount on your modules for ordering more of them</h2>
+			<p>
+				Looking to configure your next desk? We have prepared discount steps for ordering more modules in a single order. That way the price per module goes down with the amount you purchase!
+			</p>
+			<div>
+				<img src="./img/tabla.jpg">
+			</div>
+
+			<div class="cont-porcent">
+				<div>
+					<button>5%</button>
+					<p>For ordering 4 or 5 modules in a single order</p>
+				</div>
+				<div>
+					<button>7%</button>
+					<p>For ordering 6 or 7 modules in a single order</p>
+				</div>
+				<div>
+					<button class="active-btn-porcent">1%</button>
+					<p>For ordering 1 or 4 modules in a single order</p>
+				</div>
+				<div>
+					<button>9%</button>
+					<p>For ordering 8 or 9 modules in a single order</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="content5">
+		<div>
+			<img class="img-one" src="https://www.modulosdesk.com/static/media/module-cabling-hole--aeon.ee835ce4.png">
+		</div>
+		<div class="content5-cont">
+			<h2>Uncompromising material quality</h2>
+			<p>We pride ourselves in our engineering and craftsmanship. However, we know that a top quality product starts with great materials. That’s why, since our very beginning, we have offered only the top quality materials for our modules. Our two product lines, Aeon and Heritage, are based on the materials used - Aeon being based on super hi-tech nano-based ultraresilient materials, and Heritage grounded in the beauty of top quality natural wood.</p>
+			<button>Learn more about our materials</button>
+		</div>
+		<div>
+			<img src="https://www.modulosdesk.com/static/media/module-cabling-hole--heritage.64bc524e.png">
+		</div>
+	</div>
+
+	<div class="content6">
+		<div class="content6-one">
+			<h2>Configure your own desk using our configurator</h2>
+			<p>
+				You can shop on our website the old fashion way - browsing our site and adding items to cart. But what we also offer is a powerful configurator tool that allows you to create your own Modulos desk configuration, select and position legs, and even view it in 3D!
+			</p>
+			<button>Configure yours!</button>
+		</div>
+		<div class="content6-two">
+			<img src="https://www.modulosdesk.com/static/media/configurator-promo.b94388e3.png" width="100%">
+		</div>
+	</div>
+
+	<div class="content7">
+		<h2>Sign up for our newsletter and follow us on social media</h2>
+		<p>We are constantly working on expanding our product line, creating cool new modules and introducing new materials. We also use our newsletter to announce important updates and special offers. If you're interested, you can simply sign up by entering your email address below. You can also follow us on our social media channels: Facebook, Instagram and Twitter!
+		<br/><br/><span class="blue">Sign up for our newsletter below and be among the first ones to know about our special offers, discounts and exciting new announcements!</span></p>
+
+		<div class="content7-email">
+			<input type="text" placeholder="Your email address">
+			<button > Sing me up! </button>
+		</div>
+	</div>
+
+	<div class="content8">
+		<h2>Environmentally responsible by reducing waste</h2>
+		<p>Currently there's a lot of material being just thrown away because the old desk got scratched in one place of the surface, it's leg broke, it's become too small or too big. The Modulos idea of owning a desk battles this wasteful practice. Why throw away good material and then cut down a bunch of trees for the new one, when you can replace only the part that you don't need or upgrade the whole thing?</p>
+		<img src="https://www.modulosdesk.com/static/media/environmentally-responsible.70f9b2b1.png">
+	</div>
+
+	<footer>
+		<div class="f-img">
+			<img src="https://www.modulosdesk.com/static/media/Modulos-logo-positive--web.26da057d.svg">
+		</div>
+		<div class="f-cont">
+			<ol>
+				<li>Shop</li>
+				<li>Configure Yours</li>
+				<li>Modules</li>
+				<li>Legs</li>
+				<li>Add-ons</li>
+			</ol>
+			<ol>
+				<li>About</li>
+				<li>Materials</li>
+				<li>About Modules</li>
+				<li>Our Story</li>
+				<li></li>
+			</ol>
+			<ol>
+				<li>Lear More</li>
+				<li>For Business</li>
+				<li>Contact</li>
+				<li></li>
+				<li></li>
+			</ol>
+			<ol>
+				<li>Additionl info</li>
+				<li>Shipping</li>
+				<li>Warranty and returns</li>
+				<li>Terms of service</li>
+				<li>Privacy Policy</li>
+			</ol>
+			<ol>
+				<li>Social Media</li>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Twitter</li>
+				<li></li>
+			</ol>
+		</div>
+	</footer>
+	<p class="end-t">Copyright © 2018 Modulos Desk LLC. All rights reserved. Modulos design is patent-pending and industrial design protected.</p>
+
+</body>
+</html>
